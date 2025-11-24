@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Raghav Nanjappan | VR & HCI Research</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="site-wrapper">
+  <header>
+    <div class="header-inner">
+      <div class="brand">Raghav Nanjappan</div>
+      <nav>
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="cv.html" class="nav-link">CV</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-inner">
+      <section class="hero">
+        <div>
+          <h1 class="hero-title">Virtual Reality &amp; Human–Computer Interaction</h1>
+          <p class="hero-subtitle">
+            I am a computer science researcher studying how people experience, adapt to, 
+            and remain comfortable in virtual environments. My work focuses on virtual reality interaction, 
+            cybersickness, multisensory perception, and human–AI interaction.
+          </p>
+          <div class="chip-row">
+            <span class="chip"><span class="chip-dot"></span>Virtual reality</span>
+            <span class="chip"><span class="chip-dot"></span>HCI &amp; UX</span>
+            <span class="chip"><span class="chip-dot"></span>Cybersickness</span>
+            <span class="chip"><span class="chip-dot"></span>Human–AI interaction</span>
+          </div>
+          <div class="btn-row">
+            <a href="research.html" class="btn">View research</a>
+            <a href="projects.html" class="btn secondary">Browse projects</a>
+          </div>
+        </div>
+        <div>
+          <div class="hero-card">
+            <strong>Current position</strong><br />
+            M.S. Computer Science, University of Florida<br />
+            Focus: Human-Centered Computing &amp; Virtual Reality
+            <br /><br />
+            <strong>Research interests</strong>
+            <ul class="clean">
+              <li>Locomotion techniques and camera motion in VR</li>
+              <li>Understanding and reducing cybersickness</li>
+              <li>Multisensory perception and cue conflicts</li>
+              <li>Trust, adaptation, and comfort in human–AI systems</li>
+            </ul>
+            <div class="btn-row">
+              <a href="cv.html" class="btn secondary">Download CV</a>
+              <a href="contact.html" class="btn secondary">Contact</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Selected highlights</h2>
+        <p class="section-subtitle">A snapshot of my research and development work.</p>
+        <div class="card-list">
+          <article class="card">
+            <h3>NeuroTransformer: Transformer Model for Motor Imagery Classification</h3>
+            <div class="card-meta">Peer-reviewed publication · EEG · Deep learning</div>
+            <p class="muted">
+              Developed models for decoding motor imagery from EEG, gaining experience working with
+              noisy physiological signals and building robust analysis pipelines.
+            </p>
+          </article>
+          <article class="card">
+            <h3>VR Cybersickness Camera Rig</h3>
+            <div class="card-meta">Unity · Locomotion · Experimental platform</div>
+            <p class="muted">
+              Built a configurable VR camera system to explore how perturbations in speed, rotation,
+              and trajectory affect user comfort and sickness.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Get Cooking! VR</h3>
+            <div class="card-meta">VR interaction · User studies · Game-like tasks</div>
+            <p class="muted">
+              Designed a VR cooking environment with tasks such as cracking and flipping eggs 
+              to investigate interaction techniques and performance in everyday actions.
+            </p>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Raghav Nanjappan · raghavnanjappan.com
+  </footer>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Research | Raghav Nanjappan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="site-wrapper">
+  <header>
+    <div class="header-inner">
+      <div class="brand">Raghav Nanjappan</div>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="research.html" class="nav-link active">Research</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="cv.html" class="nav-link">CV</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-inner">
+      <section class="section">
+        <h1 class="section-title">Research</h1>
+        <p class="section-subtitle">
+          Publications and ongoing directions in VR, HCI, and intelligent systems.
+        </p>
+
+        <div class="section">
+          <h2 class="section-title" style="font-size:1.2rem;">Publications</h2>
+          <div class="card-list">
+            <article class="card">
+              <h3>NeuroTransformer: Transformer Model for Motor Imagery Classification</h3>
+              <div class="card-meta">
+                Authors: &lt;Author list&gt; · Venue: &lt;Conference / Journal&gt; · 2025
+              </div>
+              <p class="muted">
+                Explores transformer-based architectures for EEG motor imagery classification, 
+                highlighting the potential of attention mechanisms for decoding neural signals 
+                in BCI applications.
+              </p>
+              <div class="card-links">
+                <a href="#" target="_blank">PDF</a> ·
+                <a href="#" target="_blank">Publisher</a> ·
+                <a href="#" target="_blank">BibTeX</a>
+              </div>
+            </article>
+
+            <!-- Add more publication cards here as they are accepted. -->
+          </div>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title" style="font-size:1.2rem; margin-top:2rem;">Current research themes</h2>
+          <div class="card-list">
+            <article class="card">
+              <h3>VR Locomotion &amp; Cybersickness</h3>
+              <p class="muted">
+                Studying how different locomotion strategies and camera motion parameters
+                influence cybersickness and comfort in VR, with the goal of deriving 
+                design guidelines and adaptive control strategies.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Multisensory Conflicts in Immersive Environments</h3>
+              <p class="muted">
+                Investigating how conflicts between visual, vestibular, and proprioceptive cues 
+                impact balance, presence, and task performance, and how these conflicts can be 
+                mitigated or used deliberately in interaction design.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Human–AI Interaction in VR Systems</h3>
+              <p class="muted">
+                Exploring user trust, adaptation, and mental models when interacting with 
+                intelligent agents and adaptive systems embedded in virtual reality environments.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Raghav Nanjappan · raghavnanjappan.com
+  </footer>
+</div>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

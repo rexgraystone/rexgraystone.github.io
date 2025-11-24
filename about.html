@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About | Raghav Nanjappan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="site-wrapper">
+  <header>
+    <div class="header-inner">
+      <div class="brand">Raghav Nanjappan</div>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="cv.html" class="nav-link">CV</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-inner">
+      <section class="section">
+        <h1 class="section-title">About</h1>
+        <p class="section-subtitle">
+          A bit more about my background, training, and long-term goals.
+        </p>
+
+        <div class="card">
+          <h3>Short bio</h3>
+          <p>
+            I am a graduate student in Computer Science at the University of Florida, focusing on 
+            Human-Centered Computing and Virtual Reality. My research interests include VR interaction 
+            design, cybersickness, multisensory perception, and human–AI interaction.
+          </p>
+          <p>
+            Before UF, I completed my B.Tech. in Computer Science and Engineering with a focus on 
+            Artificial Intelligence and Machine Learning, where I worked on EEG-based motor imagery 
+            classification and other applied machine learning projects.
+          </p>
+        </div>
+
+        <div class="section" style="margin-top:2rem;">
+          <h2 class="section-title">Research direction</h2>
+          <p>
+            I am particularly interested in how small changes in motion, visuals, and feedback can 
+            dramatically alter how comfortable and natural VR feels. My long-term goal is to develop 
+            VR interaction and locomotion techniques that enable longer, safer, and more accessible use 
+            of immersive systems.
+          </p>
+          <ul class="clean">
+            <li>Understanding the limits of human perception in VR locomotion.</li>
+            <li>Designing perturbation schedules that avoid triggering cybersickness.</li>
+            <li>Incorporating multimodal cues (visual, vestibular, haptic) to improve stability and comfort.</li>
+            <li>Studying how users adapt to intelligent and semi-autonomous systems in VR.</li>
+          </ul>
+        </div>
+
+        <div class="section" style="margin-top:2rem;">
+          <h2 class="section-title">Long-term goals</h2>
+          <p>
+            I plan to pursue a Ph.D. in Computer Science with a specialization in VR and HCI, and 
+            ultimately work as a researcher and educator. I am excited about building tools, 
+            experimental platforms, and collaborative projects that help us better understand how 
+            people interact with immersive technologies.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Raghav Nanjappan · raghavnanjappan.com
+  </footer>
+</div>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

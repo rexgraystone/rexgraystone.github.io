@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CV | Raghav Nanjappan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="site-wrapper">
+  <header>
+    <div class="header-inner">
+      <div class="brand">Raghav Nanjappan</div>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="cv.html" class="nav-link active">CV</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-inner">
+      <section class="section">
+        <h1 class="section-title">Curriculum Vitae</h1>
+        <p class="section-subtitle">
+          Download the full, up-to-date CV as a PDF.
+        </p>
+
+        <div class="card">
+          <p>
+            I maintain a detailed academic CV including education, publications, research experience, 
+            teaching, and service.
+          </p>
+          <div class="btn-row">
+            <a href="cv/RaghavNanjappan_CV.pdf" class="btn" target="_blank" rel="noopener noreferrer">
+              Download CV (PDF)
+            </a>
+          </div>
+          <p class="muted" style="margin-top:0.8rem;">
+            Place your CV file in a <code>cv</code> folder inside this website and ensure the file name matches the link.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Raghav Nanjappan · raghavnanjappan.com
+  </footer>
+</div>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

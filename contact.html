@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | Raghav Nanjappan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="site-wrapper">
+  <header>
+    <div class="header-inner">
+      <div class="brand">Raghav Nanjappan</div>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="cv.html" class="nav-link">CV</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-inner">
+      <section class="section">
+        <h1 class="section-title">Contact</h1>
+        <p class="section-subtitle">
+          The best ways to reach me and follow my work.
+        </p>
+
+        <div class="contact-grid">
+          <div class="card contact-list">
+            <p><span class="label">Email:</span> 
+              <a href="mailto:youremail@ufl.edu">youremail@ufl.edu</a>
+            </p>
+            <p><span class="label">GitHub:</span> 
+              <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
+            </p>
+            <p><span class="label">Google Scholar:</span> 
+              <a href="#" target="_blank">Scholar profile</a>
+            </p>
+            <p><span class="label">LinkedIn:</span> 
+              <a href="#" target="_blank">LinkedIn profile</a>
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Notes</h3>
+            <p class="muted">
+              I am always happy to connect about virtual reality, HCI, and research collaborations. 
+              If you are a prospective collaborator or student interested in similar topics, 
+              feel free to reach out with a short description of your interests.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Raghav Nanjappan · raghavnanjappan.com
+  </footer>
+</div>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

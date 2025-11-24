@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects | Raghav Nanjappan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="site-wrapper">
+  <header>
+    <div class="header-inner">
+      <div class="brand">Raghav Nanjappan</div>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="cv.html" class="nav-link">CV</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-inner">
+      <section class="section">
+        <h1 class="section-title">Projects</h1>
+        <p class="section-subtitle">
+          Selected technical and research projects. This list will evolve as I add new work.
+        </p>
+
+        <div class="card-list">
+          <article class="card">
+            <h3>Get Cooking! – VR Cooking Game</h3>
+            <div class="card-meta">Unity · VR interaction · User study design</div>
+            <p class="muted">
+              A VR environment for everyday cooking tasks such as cracking, whisking, and flipping eggs. 
+              Designed to support controlled studies on motion, input techniques, and user performance.
+            </p>
+            <div class="card-links">
+              <a href="#" target="_blank">Project page</a> ·
+              <a href="#" target="_blank">Source code</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>VR Cybersickness Camera Rig</h3>
+            <div class="card-meta">Unity · Experimental platform</div>
+            <p class="muted">
+              A configurable camera rig that can apply different perturbation patterns (e.g., oscillations, 
+              sudden rotations, variable speeds) to systematically study the onset and progression of cybersickness.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>EEG-Based Motor Imagery Classification</h3>
+            <div class="card-meta">Python · PyTorch · EEG</div>
+            <p class="muted">
+              Implemented deep learning pipelines, including transformer-based models, to classify motor imagery 
+              states from EEG data as part of a broader BCI research effort.
+            </p>
+          </article>
+
+          <!-- Add more project cards as needed. -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Raghav Nanjappan · raghavnanjappan.com
+  </footer>
+</div>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
