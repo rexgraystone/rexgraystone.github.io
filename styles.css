@@ -258,20 +258,21 @@
   }
   
   .btn.secondary {
-    border-color: var(--accent-blue);
-    background: #ffffff;
-    color: var(--accent-blue);
+    border-color: var(--accent);
+    background: var(--accent);
+    color: #ffffff;
   }
   
   .btn.secondary:hover {
-    background: var(--accent-blue-soft);
+    background: var(--accent-blue);
     border-color: var(--accent-blue);
-    color: var(--accent-blue);
+    color: #ffffff;
   }
   
   .btn:hover {
-    filter: brightness(1.05);
-    box-shadow: 0 6px 18px rgba(250, 70, 22, 0.3);
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
+    box-shadow: 0 6px 18px rgba(0, 33, 165, 0.3);
     text-decoration: none;
   }
   
