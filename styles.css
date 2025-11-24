@@ -272,6 +272,7 @@
   .btn:hover {
     background: var(--accent-blue);
     border-color: var(--accent-blue);
+    color: #ffffff;
     box-shadow: 0 6px 18px rgba(0, 33, 165, 0.3);
     text-decoration: none;
   }
