@@ -6,8 +6,10 @@
     --border: #e5e7eb;
     --text: #111827;
     --muted: #6b7280;
-    --accent: #2563eb;
-    --accent-soft: #dbeafe;
+    --accent: #FA4616;
+    --accent-blue: #0021A5;
+    --accent-soft: #ffe5df;
+    --accent-blue-soft: #e6eaf5;
     --shadow-soft: 0 10px 25px rgba(15, 23, 42, 0.06);
   }
   
@@ -20,17 +22,18 @@
   body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: radial-gradient(circle at top, #eff6ff 0, #f9fafb 55%);
+    background: radial-gradient(circle at top, #e6eaf5 0, #f9fafb 55%);
     color: var(--text);
     line-height: 1.6;
   }
   
   a {
-    color: var(--accent);
+    color: var(--accent-blue);
     text-decoration: none;
   }
   
   a:hover {
+    color: var(--accent);
     text-decoration: underline;
   }
   
@@ -86,15 +89,15 @@
   }
   
   .nav-link:hover {
-    border-color: var(--accent-soft);
-    background: var(--accent-soft);
-    color: var(--accent);
+    border-color: var(--accent-blue-soft);
+    background: var(--accent-blue-soft);
+    color: var(--accent-blue);
     text-decoration: none;
   }
   
   .nav-link.active {
-    border-color: var(--accent);
-    background: var(--accent);
+    border-color: var(--accent-blue);
+    background: var(--accent-blue);
     color: #ffffff;
   }
   
@@ -158,7 +161,7 @@
     width: 6px;
     height: 6px;
     border-radius: 999px;
-    background: var(--accent);
+    background: var(--accent-blue);
     margin-right: 0.35rem;
   }
   
@@ -241,14 +244,20 @@
   }
   
   .btn.secondary {
-    border-color: var(--border);
+    border-color: var(--accent-blue);
     background: #ffffff;
-    color: var(--muted);
+    color: var(--accent-blue);
+  }
+  
+  .btn.secondary:hover {
+    background: var(--accent-blue-soft);
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
   }
   
   .btn:hover {
-    filter: brightness(1.03);
-    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.25);
+    filter: brightness(1.05);
+    box-shadow: 0 6px 18px rgba(250, 70, 22, 0.3);
     text-decoration: none;
   }
   
@@ -261,7 +270,7 @@
   
   ul.clean li::before {
     content: "•";
-    color: var(--accent);
+    color: var(--accent-blue);
     display: inline-block;
     width: 1em;
     margin-left: -1em;
