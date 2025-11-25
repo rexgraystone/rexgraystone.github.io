@@ -180,12 +180,12 @@
   }
 
   .hero-image {
-    width: 150px;
-    height: 150px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid var(--accent-blue);
-    margin-bottom: 1.25rem;
+    border: 2px solid var(--accent-blue);
+    margin-bottom: 1rem;
     box-shadow: 0 4px 12px rgba(0, 33, 165, 0.15);
   }
 
@@ -223,6 +223,17 @@
     border: 1px solid var(--border);
     border-left: 4px solid var(--accent);
     box-shadow: 0 4px 15px rgba(15,23,42,0.03);
+    transition: all 0.2s ease;
+  }
+
+  .card:hover {
+    box-shadow: 0 6px 20px rgba(15,23,42,0.08);
+    transform: translateY(-2px);
+  }
+
+  .card h3 a:hover {
+    color: var(--accent-blue);
+    text-decoration: underline;
   }
   
   .card h3 {
@@ -250,6 +261,15 @@
   .card-links {
     margin-top: 0.4rem;
     font-size: 0.88rem;
+  }
+
+  .card-links a {
+    color: var(--accent-blue);
+    font-weight: 500;
+  }
+
+  .card-links a:hover {
+    color: var(--accent);
   }
   
   /* Buttons */
