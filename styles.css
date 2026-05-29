@@ -6,10 +6,10 @@
     --border: #e5e7eb;
     --text: #111827;
     --muted: #6b7280;
-    --accent: #FA4616;
-    --accent-blue: #0021A5;
-    --accent-soft: #ffe5df;
-    --accent-blue-soft: #e6eaf5;
+    --accent: #FFC904;
+    --accent-blue: #000000;
+    --accent-soft: #fff4cc;
+    --accent-blue-soft: #ebebeb;
     --shadow-soft: 0 10px 25px rgba(15, 23, 42, 0.06);
   }
   
@@ -22,7 +22,7 @@
   body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: radial-gradient(circle at top, rgba(0, 33, 165, 0.08) 0, #f9fafb 55%);
+    background: radial-gradient(circle at top, rgba(0, 0, 0, 0.06) 0, #f9fafb 55%);
     color: var(--text);
     line-height: 1.6;
   }
@@ -186,7 +186,7 @@
     object-fit: cover;
     border: 2px solid var(--accent-blue);
     margin-bottom: 1rem;
-    box-shadow: 0 4px 12px rgba(0, 33, 165, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
   }
 
   .hero-card-content {
@@ -290,7 +290,7 @@
     border-radius: 999px;
     border: 1px solid var(--accent);
     background: var(--accent);
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     transition: all 0.15s ease;
   }
@@ -298,7 +298,7 @@
   .btn.secondary {
     border-color: var(--accent);
     background: var(--accent);
-    color: #ffffff;
+    color: #000000;
   }
   
   .btn.secondary:hover {
@@ -311,7 +311,7 @@
     background: var(--accent-blue);
     border-color: var(--accent-blue);
     color: #ffffff;
-    box-shadow: 0 6px 18px rgba(0, 33, 165, 0.3);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
     text-decoration: none;
   }
   
