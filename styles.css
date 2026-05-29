@@ -1,14 +1,24 @@
-/* styles.css */
+/* styles.css — UCF brand: https://www.ucf.edu/brand/brand-assets/colors/ */
 
 :root {
+    /* UCF Black — digital #000000 */
+    --ucf-black: #000000;
+    /* UCF Bright Gold — digital #FFC904 (alt #FFCC00) */
+    --ucf-gold: #ffc904;
+    --ucf-gold-alt: #ffcc00;
+    --ucf-gold-50: #ffe682;
+    --ucf-gold-25: #fff3c1;
+    --ucf-black-50: #808080;
+    --ucf-black-25: #bfbfbf;
+
     --bg: #f9fafb;
     --bg-alt: #ffffff;
     --border: #e5e7eb;
     --text: #111827;
     --muted: #6b7280;
-    --accent: #FFC904;
-    --accent-blue: #000000;
-    --accent-soft: #fff4cc;
+    --accent: var(--ucf-gold);
+    --accent-blue: var(--ucf-black);
+    --accent-soft: var(--ucf-gold-25);
     --accent-blue-soft: #ebebeb;
     --shadow-soft: 0 10px 25px rgba(15, 23, 42, 0.06);
   }
@@ -46,9 +56,8 @@
   }
   
   header {
-    border-bottom: 2px solid var(--accent-blue);
-    background-color: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(8px);
+    border-bottom: 3px solid var(--ucf-gold);
+    background-color: var(--ucf-black);
     position: sticky;
     top: 0;
     z-index: 10;
@@ -64,11 +73,19 @@
   }
   
   .brand {
-    font-weight: 600;
-    letter-spacing: 0.03em;
+    font-weight: 700;
+    letter-spacing: 0.04em;
     font-size: 0.95rem;
     text-transform: uppercase;
-    color: var(--accent-blue);
+    color: var(--ucf-gold);
+  }
+
+  header a {
+    color: var(--ucf-gold);
+  }
+
+  header a:hover {
+    color: var(--ucf-gold-alt);
   }
   
   nav {
@@ -79,26 +96,28 @@
   
   .nav-link {
     font-size: 0.9rem;
+    font-weight: 600;
     padding: 0.35rem 0.85rem;
     border-radius: 999px;
     border: 1px solid transparent;
     background: transparent;
-    color: var(--muted);
+    color: var(--ucf-gold);
     text-decoration: none;
     transition: all 0.15s ease;
   }
   
   .nav-link:hover {
-    border-color: var(--accent-blue-soft);
-    background: var(--accent-blue-soft);
-    color: var(--accent-blue);
+    border-color: var(--ucf-gold);
+    background: rgba(255, 201, 4, 0.12);
+    color: var(--ucf-gold-alt);
     text-decoration: none;
   }
   
   .nav-link.active {
-    border-color: var(--accent-blue);
-    background: var(--accent-blue);
-    color: #ffffff;
+    border-color: var(--ucf-gold);
+    background: var(--ucf-gold);
+    color: var(--ucf-black);
+    font-weight: 700;
   }
   
   /* Main content */
@@ -162,7 +181,7 @@
     width: 6px;
     height: 6px;
     border-radius: 999px;
-    background: var(--accent-blue);
+    background: var(--ucf-gold);
     margin-right: 0.35rem;
   }
   
@@ -221,7 +240,7 @@
     border-radius: 0.9rem;
     padding: 1rem 1.1rem;
     border: 1px solid var(--border);
-    border-left: 4px solid var(--accent);
+    border-left: 4px solid var(--ucf-gold);
     box-shadow: 0 4px 15px rgba(15,23,42,0.03);
     transition: all 0.2s ease;
   }
@@ -324,7 +343,7 @@
   
   ul.clean li::before {
     content: "•";
-    color: var(--accent-blue);
+    color: var(--ucf-gold);
     display: inline-block;
     width: 1em;
     margin-left: -1em;
