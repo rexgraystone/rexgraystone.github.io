@@ -370,6 +370,35 @@
   .label {
     font-weight: 500;
   }
+
+  /* Education (academic-style list) */
+
+  .education-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .education-item {
+    margin-bottom: 1.1rem;
+  }
+
+  .education-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .education-degree {
+    font-weight: 600;
+    color: var(--ucf-black);
+    line-height: 1.4;
+  }
+
+  .education-institution {
+    margin-top: 0.2rem;
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
   
   /* Footer */
   
